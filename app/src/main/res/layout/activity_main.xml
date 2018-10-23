@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
+
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -21,15 +22,29 @@
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
-        <devs.mulham.horizontalcalendar.HorizontalCalendarView
-            android:id="@+id/calendarView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:textColorSelected="#FFFF"
-            app:sizeBottomText="14sp"
-            app:sizeMiddleText="20sp"/>
-
+        <!--<devs.mulham.horizontalcalendar.HorizontalCalendarView-->
+            <!--android:id="@+id/calendarView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:textColorSelected="#FFFF"-->
+            <!--app:sizeBottomText="14sp"-->
+            <!--app:sizeMiddleText="20sp"/>-->
     </android.support.design.widget.AppBarLayout>
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="302dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="217dp" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -39,5 +54,56 @@
         android:layout_alignParentRight="true"
         android:layout_margin="@dimen/fab_margin"
         android:src="@drawable/ic_calendar_24dp"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="308dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="402dp"
+        android:text="우선순위 TOP 5" />
+
+
+    <TextView
+        android:id="@+id/viewDatePick"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="185dp"
+        android:background="#DDDDDD"
+        android:gravity="center"
+        android:text=""
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtDiary"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="52dp"
+        android:background="#DDDDDD"
+        android:ems="10"
+        android:gravity="start|center_vertical"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:padding="7sp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:text="새 일기 저장" />
+
 
 </RelativeLayout>
