@@ -22,13 +22,14 @@
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
-        <!--<devs.mulham.horizontalcalendar.HorizontalCalendarView-->
-            <!--android:id="@+id/calendarView"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--app:textColorSelected="#FFFF"-->
-            <!--app:sizeBottomText="14sp"-->
-            <!--app:sizeMiddleText="20sp"/>-->
+        <devs.mulham.horizontalcalendar.HorizontalCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:textColorSelected="#FFFF"
+            app:sizeBottomText="0sp"
+            app:sizeMiddleText="0sp"
+            />
     </android.support.design.widget.AppBarLayout>
 
     <DatePicker
@@ -44,7 +45,7 @@
         android:layout_marginLeft="0dp"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
-        android:layout_marginBottom="217dp" />
+        android:layout_marginBottom="158dp" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
